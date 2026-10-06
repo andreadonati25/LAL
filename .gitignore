@@ -1,0 +1,25 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/.ruff_cache
+.env
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Local virtual environments
+.venv/
+venv/
+
+# file
+Claude.md
+DELETED.md
+WORK_PLAN.md
+ENTITIES.md
+
+# cartelle
+/pagine_vecchie_frontend
+/pagine_vecchie_backend
+/dati_upload
+/data

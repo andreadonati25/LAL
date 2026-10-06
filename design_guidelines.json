@@ -1,0 +1,117 @@
+{
+  "theme_and_identity": {
+    "concept": "Premium Dynasty Fantasy Football League (LA Lega)",
+    "vibe": "Professional, Authoritative, Strategic, Historic. Avoid childish app looks and generic AI gradient slop.",
+    "color_archetype": "Luxury (Premium, Depth, Mystery)",
+    "base_theme": "Dark Mode (deep plum/midnight purple backgrounds with high-contrast text and gold/bronze accents)"
+  },
+  "typography": {
+    "strategy": "Editorial Future combined with Soft Utility for data",
+    "headings": {
+      "family": "Clash Display or Cabinet Grotesk",
+      "style": "Bold, tight tracking, expressive",
+      "usage": "Page titles, hero sections, stats highlights"
+    },
+    "body": {
+      "family": "Manrope",
+      "style": "Clean, highly readable",
+      "usage": "Main text, descriptions, chat messages"
+    },
+    "data_numbers": {
+      "family": "JetBrains Mono",
+      "style": "Monospace, crisp",
+      "usage": "Budgets, salaries, dates, stats tables"
+    },
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight",
+      "body": "text-base leading-relaxed",
+      "labels": "text-xs tracking-[0.2em] uppercase font-bold"
+    }
+  },
+  "colors": {
+    "background": {
+      "main": "#0D0514",
+      "surface": "#1A0B2E",
+      "surface_elevated": "#2A1245"
+    },
+    "primary": {
+      "default": "#6B21A8",
+      "hover": "#9333EA",
+      "text": "#E9D5FF"
+    },
+    "accent": {
+      "gold": "#D4AF37",
+      "bronze": "#CD7F32",
+      "silver": "#C0C0C0"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#CBD5E1",
+      "muted": "#94A3B8"
+    },
+    "borders": {
+      "default": "#3B1C5A",
+      "focus": "#D4AF37"
+    },
+    "status": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "danger": "#EF4444"
+    }
+  },
+  "layouts_and_spacing": {
+    "spacing_philosophy": "Generous. Use p-6, p-8, p-12. Avoid cramped tables.",
+    "grid_system": "Asymmetrical 'Bento' grid for Dashboard (e.g., Hero stat col-span-8, secondary col-span-4). High density grid for stats and tables.",
+    "borders_and_surfaces": "1px solid borders (border-[#3B1C5A]) with subtle inner glow. Soft UI rounded corners (rounded-xl to rounded-2xl).",
+    "mobile_responsive": "Strict mobile-first. Ensure horizontal scroll or stacked cards for complex financial tables on mobile."
+  },
+  "components": {
+    "navigation": "Sticky top nav. MUST have solid or heavy blur background (backdrop-blur-xl bg-[#0D0514]/80 border-b border-[#3B1C5A]). NEVER transparent over content.",
+    "cards": "Flat background with 1px border. Hover: slight lift (-translate-y-1) and glow shadow. For stats: use grid borders (border-collapse look).",
+    "buttons": "Primary: Pill-shaped, Deep Purple bg with Gold/White text. Hover: Lighter purple. Secondary: Outline with heavy border.",
+    "tables": "Shadcn tables but with generous cell padding (p-4) and JetBrains Mono for numbers. Hover states on rows.",
+    "forms": "Shadcn inputs. Solid dark backgrounds for inputs with strong focus rings (focus:ring-2 focus:ring-[#D4AF37])."
+  },
+  "interactions_and_motion": {
+    "transitions": "Use specific properties (e.g., transition-colors, transition-transform) with duration-200. NEVER use 'transition-all'.",
+    "micro_animations": "Framer Motion for page entrances (fade in up), staggered list items, and modal pops.",
+    "hover_states": "All interactive elements must change background AND text color. High contrast on active/focus."
+  },
+  "pages_strategy": {
+    "Login": "Editorial split screen. Left: Dark moody stadium background with heavy purple overlay. Right: Clean, crisp login form. JWT logic setup.",
+    "Dashboard_Squadra": "Bento grid. Top: Financial Summary (Budgets, Salaries). Middle: Monthly roster management (drag/drop or select UI). Bottom: Upcoming contract expiries.",
+    "Mercato_Offerte": "Split view or tabs. Left: Chat/Negotiation history. Right: Offer form with dynamic clauses (Shadcn forms).",
+    "Bacheca": "Social feed style. Cards for official communications from the 8 teams. Focus on typography and reading experience.",
+    "Albo_D_Oro": "Prestigious museum vibe. Large gold typography, dark backgrounds, high-contrast imagery.",
+    "Statistiche": "Dense data view. Charts (Recharts/Shadcn Charts), historical tables, top scorer rankings. Professional financial tool feel.",
+    "Pannello_Presidente": "Admin dense grid. Editable tables, quick toggles, overriding inputs for all teams and players."
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1599158150601-1417ebbaafdd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHw0fHxzb2NjZXIlMjBzdGFkaXVtJTIwbmlnaHR8ZW58MHx8fHwxNzg0MTI4MjA1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "Login Background / Hero",
+      "description": "Night stadium, moody. Apply dark purple overlay."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1705925716592-259267037a03?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxnb2xkJTIwdHJvcGh5fGVufDB8fHx8MTc4NDEyODIwNXww&ixlib=rb-4.1.0&q=85",
+      "category": "Albo d'Oro",
+      "description": "Gold trophies. Use for Hall of Fame header."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1551958219-acbc608c6377?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxzb2NjZXIlMjBtYW5hZ2VyfGVufDB8fHx8MTc4NDEyODIwNXww&ixlib=rb-4.1.0&q=85",
+      "category": "Mercato / Dashboard",
+      "description": "Soccer ball on field. Use for generic team/market headers."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1613327986042-63d4425a1a5d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxwdXJwbGUlMjBhYnN0cmFjdCUyMHRleHR1cmV8ZW58MHx8fHwxNzg0MTI4MjA1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "Bacheca / Official Communications",
+      "description": "Purple abstract texture. Use as card backgrounds or header accents."
+    }
+  ],
+  "accessibility_and_testing": {
+    "testing_attributes": "All interactive and key informational elements MUST include a `data-testid` attribute (e.g., `data-testid=\"login-submit-button\"`).",
+    "contrast": "Ensure minimum 4.5:1 ratio for normal text. Use APCA guidelines.",
+    "focus": "All buttons and links must have distinct focus rings."
+  }
+}
